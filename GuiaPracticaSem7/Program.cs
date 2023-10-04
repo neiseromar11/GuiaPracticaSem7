@@ -10,8 +10,35 @@ namespace GuiaPracticaSem7
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Ingrese numero del  1 a al 4 para ingresar : " +
+                "\n 1: Ingrese ejercicio 1 " +
+                "\n 2: Ingrese ejercicio 2 " +
+                "\n 3: Ingrese ejercicio 3 " +
+                "\n 4: Ingrese ejercicio 4 ");
+              int num = int.Parse(Console.ReadLine());
+            switch (num)
+            {
+                case 1:
+                    Console.WriteLine("Ejercicio 1 ");
+                    Ejercicio01();
+                    break;
+                case 2:
+                    Console.WriteLine("Ejercicio 2 ");
+                    Ejercicio02();
+                    break;
+                case 3:
+                    Console.WriteLine("Ejercicio 3 ");
+                    Ejercicio03();
+                    break;
+                case 4:
+                    Console.WriteLine("Ejercicio 4 ");
+                    Ejercicio04();
+                    break;
+                default:
+                    break;
+            }
 
-            Ejercicio01();
+            
         }
         static void Ejercicio01() {
             Console.Write("Ingrese el valor de n:");
